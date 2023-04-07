@@ -1,0 +1,101 @@
+{% extends "signup.html" %} 
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-12">
+        <ol class="breadcrumb">
+            <!-- <li class="breadcrumb-item">
+                <a href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
+            </li> -->
+            <li class="breadcrumb-item">
+                <strong>Form</strong>
+            </li>
+            <li class="breadcrumb-item active">
+                <strong>Create Form</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="form_label">
+                <strong>Login Form</strong>
+            </div>
+            <div class="form-group">
+                <strong>User Name</strong><input type="text" class="form-control" name="username" id="username" placeholder="Enter User Name Here">
+            </div>
+            <div class="form-group">
+                <strong>Name</strong><input type="text" class="form-control" name="name" id="username" placeholder="Enter Name Here">
+            </div>
+            <div class="form-group">
+                <strong>Last Name</strong><input type="text" class="form-control" name="last_name" id="username" placeholder="Enter Last Name Here">
+            </div>
+            <div class="form-group">
+                <strong>Email</strong><input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email Here">  
+            </div>
+            <div class="form-group">
+                <strong>Password</strong><input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Enter Password Here">
+            </div>
+            <div class="form-group">
+                <strong>Content</strong><input type="text" class="form-control" name="content" id="username" placeholder="Enter Content Here">
+            </div>
+            <button class="save-btn" type="submit" id="submit" class="btn btn-light">Submit</button>
+        </div>
+    </div>
+</form>
+<footer class="footer">
+    Ariespro@123gmail.com By using this site
+</footer>
+
+<style>
+body{
+    background-color: ghostwhite;
+}
+strong{
+    margin-top: 100px;
+}
+.container{
+    /* display: block; */
+    justify-content: center;
+    position: center;
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+.form-control{
+    text-align: center;
+    background-color: #f5eeed;
+}
+.form_label{
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: green;
+    background-color: blanchedalmond;
+    left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#submit{
+    color: white;
+    /* background-color: black; */
+    position: relative;
+    top: 30px;
+    left: 530px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: black;
+}
+#submit:hover{
+    background-color: green;
+}
+.footer{
+    padding-top: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+</style>
+{% endblock %}
