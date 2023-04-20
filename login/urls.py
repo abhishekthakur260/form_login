@@ -20,4 +20,5 @@ from .import views
 
 urlpatterns = [
     path('', views.signin, name='index'),
+    path('submitform/', views.Formsubmit, name='index'),
 ]

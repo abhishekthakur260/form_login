@@ -26,3 +26,6 @@ def signin(request):
         messages.success(request,'Your Form is Submit Successfully')
         return render(request,'formlogin.html',{'base': 'signup.html'})
     return render(request,'create.html')
+
+def Formsubmit(request):
+    return render(request,'content.html')

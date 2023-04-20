@@ -1,6 +1,8 @@
 {% extends "signup.html" %} 
 
 {% block content %}
+{% load static %}
+<script src="static/JS/ajax.js"></script>
 <div class="row">
     <div class="col-sm-12">
         <ol class="breadcrumb">
@@ -23,7 +25,7 @@
             <div class="form_label">
                 <strong>Login Form</strong>
             </div>
-            <div class="form-group">
+            <div class="form-group"> 
                 <strong>User Name</strong><input type="text" class="form-control" name="username" id="username" placeholder="Enter User Name Here">
             </div>
             <div class="form-group">
@@ -41,7 +43,7 @@
             <div class="form-group">
                 <strong>Content</strong><input type="text" class="form-control" name="content" id="username" placeholder="Enter Content Here">
             </div>
-            <button class="save-btn" type="submit" id="submit" class="btn btn-light">Submit</button>
+            <button class="save-btn" onclick="saveBtn()" type="submit" id="submit" class="btn btn-light">Submit</button>
         </div>
     </div>
 </form>
