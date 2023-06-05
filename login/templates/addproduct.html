@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <a href="" class="home">home</a>
+            </div>
+            <div class="col-sm-4">
+                <h1 class="add_product">Add Product ||</h1>   
+            </div>
+            <div class="heading">
+                <p class="">Number Category Name Image  </p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-12">
+            <form method="post" action="">
+                <div class="card">
+                    <div class="card-header text-primary text-center">
+                        <h5 class="card-title"><strong>ADD DEALER</strong></h5>
+                    </div>
+                    <div class="card-body">
+                        <input type="hidden" name="csrfmiddlewaretoken" value="hBOp1491tJlZ2oXbg0OBaXoM50DInVYsVxXJajI6OuCkWdDDEpHegK9YnbiJMeHy" required>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    adn the dame
+                                    <div class="col-md-12 bg-light rounded py-1">
+                                        <h6>Dealer Details</h6>
+                                    </div>
+                                </div>
+                                <div class="row mt-3" id="div_id_name">
+                                    <div class="col-md-3 text-dark">
+                                        <label for="id_name" class="form-label requiredField">Dealer Name<span class="asteriskField text-danger">*</span> :</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="text" name="name" maxlength="255" class="textinput textInput form-control" required id="id_name" placeholder="Enter Dealer Name..">
+                                    </div>
+                                </div>
+                                <div class="row mt-3" id="div_id_email">
+                                    <div class="col-md-3 text-dark">
+                                        <label for="id_email" class="form-label">Email ID<span class="asteriskField text-danger">*</span> :</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="text" name="email" maxlength="200" class="textinput textInput form-control" id="id_email" placeholder="Enter Email..">
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mb-3" id="div_id_mobile">
+                                    <div class="col-md-3 text-dark">
+                                        <label for="id_mobile" class="form-label">Mobile<span class="asteriskField text-danger">*</span> :</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="text" name="mobile" class="textinput textInput form-control" id="id_mobile" pattern="[0-9]{10}" title="Please enter numbers only and it should be of 10 digits" placeholder="Enter Mobile..">
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mb-3" id="div_id_GST_number">
+                                    <div class="col-md-3 text-dark">
+                                        <label for="id_GST_number" class="form-label">GST Number :</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="text" name="GST_number" class="textinput textInput form-control" pattern="^\d{2}[A-Za-z]{3}[CPHFATBLJGcphfatbljg]{1}[A-Za-z]{1}\d{4}[A-Za-z]{1}\d{1}[Zz]{1}[0-9A-Za-z]{1}$" title="GST Number is invalid" id="id_GST_number" placeholder="Enter GST Number..">
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mb-3" id="div_id_PAN_number">
+                                    <div class="col-md-3 text-dark">
+                                        <label for="id_PAN_number" class="form-label">PAN Number :</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="text" name="PAN_number" class="textinput textInput form-control" id="id_PAN_number" placeholder="Enter PAN Number..">
+                                    </div>
+                                </div>
+                                <div class="row mt-3 mb-3" id="div_id_description">
+                                    <div class="col-md-3 text-dark">
+                                        <label for="id_description" class="form-label">Description :</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <textarea name="description" class="textinput textInput form-control" id="id_description" placeholder="Write Description.." rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 bg-light rounded py-1">
+                                        <h6 class="mx-2">Addresses</h6>
+                                    </div>
+                                </div>
+                                <div class="row mt-3" id="div_id_line1">
+                                    <div class="col-md-3 text-dark">
+                                        <label for="id_line1" class="form-label">Line1 :</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="text" name="line1" maxlength="256" class="textinput textInput form-control" id="id_line1" placeholder="Address Line 1..">
+                                    </div>
+                                </div>
+                                <div class="row mt-3" id="div_id_line2">
+                                    <div class="col-md-3 text-dark">
+                                        <label for="id_line2" class="form-label">Line2 :</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="text" name="line2" maxlength="256" class="textinput textInput form-control" id="id_line2" placeholder="Address Line 2..">
+                                    </div>
+                                </div>
+                                <div class="row mt-3" id="div_id_village">
+                                    
+                                    <div class="col-md-3 text-dark">
+                                        <label for="id_village" class="form-label requiredField">Village<span class="asteriskField text-danger">*</span> :</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <input type="text" name="village" class="textinput textInput form-control" required id="id_village" placeholder="Enter Village..">
+                                            <span class="input-group-text clear-text">
+                                                <i aria-hidden="true" class="fa fa-times"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" name="raw_village_name" class="textinput textInput form-control mt-1" id="id_raw_village_name" placeholder="Enter Village Name..." style="display: none;">
+                                    </div>
+                                </div>
+                                <div class="row mt-3" id="div_id_tehsil">
+                                    <div class="col-md-3 text-dark">
+                                        <label for="id_tehsil" class="form-label">Tehsil :</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <input type="text" name="tehsil" class="textinput textInput form-control" id="id_tehsil" placeholder="Enter Tehsil..">
+                                            <span class="input-group-text clear-text">
+                                                <i aria-hidden="true" class="fa fa-times"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" name="raw_tehsil_name" class="textinput textInput form-control mt-1" id="id_raw_tehsil_name" placeholder="Enter Tehsil Name..." style="display: none;">
+                                    </div>
+                                </div>
+                                <div class="row mt-3" id="div_id_cluster">
+                                    <div class="col-md-3 text-dark">
+                                        <label for="id_cluster" class="form-label">Cluster :</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <input type="text" name="cluster" class="textinput textInput form-control" id="id_cluster" placeholder="Enter Cluster..">
+                                            <span class="input-group-text clear-text">
+                                                <i aria-hidden="true" class="fa fa-times"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" name="raw_cluster_name" class="textinput textInput form-control mt-1" id="id_raw_cluster_name" placeholder="Enter Cluster Name..." style="display: none;">
+                                    </div>
+                                </div>
+                                <div class="row mt-3" id="div_id_district">
+                                    <div class="col-md-3 text-dark">
+                                        <label for="id_district" class="form-label">District :</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <input type="text" name="district" class="textinput textInput form-control" id="id_district" placeholder="Enter District..">
+                                            <span class="input-group-text clear-text">
+                                                <i aria-hidden="true" class="fa fa-times"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" name="raw_district_name" class="textinput textInput form-control mt-1" id="id_raw_district_name" placeholder="Enter District Name..." style="display: none;">
+                                    </div>
+                                </div>
+                                <div class="row mt-3" id="div_id_pincode">
+                                    <div class="col-md-3 text-dark">
+                                        <label for="id_pincode" class="form-label">Pincode :</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="text" name="pincode" maxlength="6" pattern="[0-9]{6}" title="Pincode must contains only numbers and it should be of 6 digits" class="textinput textInput form-control" id="id_pincode" placeholder="Enter Pincode..">
+                                    </div>
+                                </div>
+                                <div class="row mt-3" id="div_id_pincode">
+                                    <div class="col-md-12 text-dark">
+                                        <button class="btn btn-primary pull-right w-50" type="submit">Add Dealer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                               
+                </div>
+            </form>
+       </div>   
+    </div>
+
+<style>
+    .card{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width:0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border: 1px;
+    }
+</style>
+
+</body>
+</html>

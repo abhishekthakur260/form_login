@@ -1,0 +1,117 @@
+{% extends "signup.html" %} 
+
+{% block content %}
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="" class="rel">
+  <title>Card Shape Webpage</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="/static/img/images.jpg" class="card-img-top" alt="Image 1">
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+            <p class="card-text">This is the description of card 1.</p>
+            <a href="/submitform" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="/static/img/images (1).jpg" class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <h5 class="card-title">Card 2</h5>
+            <p class="card-text">This is the description of card 2.</p>
+            <a href="/submitform" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="/static/img/images (2).jpg" class="card-img-top" alt="Image 3">
+          <div class="card-body">
+            <h5 class="card-title">Card 3</h5>
+            <p class="card-text">This is the description of card 3.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="/static/img/images (3).jpg" class="card-img-top" alt="Image 1">
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+            <p class="card-text">This is the description of card 1.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="/static/img/images (6).jpg" class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <h5 class="card-title">Card 2</h5>
+            <p class="card-text">This is the description of card 2.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="/static/img/images (5).jpg" class="card-img-top" alt="Image 3">
+          <div class="card-body">
+            <h5 class="card-title">Card 3</h5>
+            <p class="card-text">This is the description of card 3.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+<style>
+body {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  /* background-image: url(../static/images/rat_anl_bg3.jpg); */
+  /* background-color: aquamarine; */
+  background-size: cover;
+  background-position: bottom;
+  position: fixed;
+  background-repeat: no-repeat;
+}
+*{
+  top: 10;
+
+}
+
+/* Additional styles for the cards */
+.card {
+  margin-bottom: 20px;
+
+}
+.container{
+  padding-top: 5%;
+  /* max-height: 400px;
+  overflow-y: auto; */
+}
+</style>
+
+{% endblock content %}
